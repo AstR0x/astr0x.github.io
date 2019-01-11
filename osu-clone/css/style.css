@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.display {
+  background: radial-gradient(40% 50%, #FAECD5, #CAE4D8);
+  border: 1px #000 solid;
+  height: 630px;
+  margin: 0 auto;
+  width: 1280px;
+}
+
+#grid {
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  height: 550px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 1250px;
+}
+
+#grid div {
+  background-color: #000;
+  border-radius: 35px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 40px;
+  height: 70px;
+  text-align: center;
+  visibility: hidden;
+  width: 70px;
+}
+
+.start-button {
+  background-color: #fff;
+  box-sizing: border-box;
+  font-size: 30px;
+  margin: 0 auto;
+  margin-top: 300px;
+  padding-top: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  height: 50px;
+  width: 180px;
+}
+
+.start-button:hover {
+  background-color: #000;
+  color: #fff;
+  transition-duration: .5s;
+}
+
+.score-block, .time-block {
+  background-color: #fff;
+  box-sizing: border-box;
+  display: none;
+  font-size: 30px;
+  margin-left: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+.time-score {
+  display: flex;
+}
+
+.finish-score {
+  display: none;
+  font-size: 35px;
+  line-height: 1.5em;
+  margin: 0 auto;
+  margin-top: 240px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 300px;
+}
+
+.try-again-button {
+  background-color: rgba(255, 255, 255, 0.7);
+  display: none;
+  font-size: 35px;
+  margin: 0 auto;
+  margin-top: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 300px;
+}
+
+.try-again-button:hover {
+  background-color: #000;
+  color: #fff;
+  transition-duration: .5s;
+}
+
+@media screen and (min-width: 1366px) {
+  .display {
+    width: 1366px;
+    height: 695px;
+  }
+
+  #grid {
+    width: 1296px;
+    height: 548px;
+  }
+
+  #grid div {
+    border-radius: 50px;
+    font-size: 50px;
+    height: 80px;
+    width: 80px;
+  }
+
+  .start-button{
+    margin-top: 300px;
+  }
+
+  .time-score {
+    margin-top: 30px;
+  }
+
+  .score-block {
+    font-size: 30px;
+    width: 150px;
+  }
+
+  .time-block {
+    font-size: 30px;
+    width: 150px;
+  }
+
+  .finish-score {
+    margin-top: 200px;
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .display {
+    height: 810px;
+    width: 1440px;
+  }
+
+  #grid {
+    height: 720px;
+    width: 1400px;
+  }
+
+  #grid div {
+    border-radius: 44px;
+    font-size: 56px;
+    height: 88px;
+    padding-top: 12px;
+    text-align: center;
+    width: 88px;
+  }
+
+  .start-button {
+    font-size: 35px;
+    margin-top: 380px;
+    padding-top: 7px;
+    width: 220px;
+  }
+
+  .finish-score {
+    margin-top: 300px;
+  }
+
+  .time-score {
+    margin-top: 0;
+  }
+
+  .try-again-button {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+
+  .display {
+    height: 990px;
+    width: 1920px;
+  }
+
+  #grid {
+    height: 900px;
+    width: 1880px;
+  }
+
+  #grid div {
+    border-radius: 50px;
+    font-size: 68px;
+    height: 100px;
+    padding-top: 12px;
+    width: 100px;
+  }
+
+  .start-button {
+    font-size: 45px;
+    height: 70px;
+    margin-top: 450px;
+    padding-top: 10px;
+    width: 300px;
+  }
+
+  .finish-score {
+    font-size: 50px;
+    margin-top: 350px;
+    width: 400px;
+  }
+
+  .try-again-button {
+    margin-top: 10px;
+    font-size: 50px;
+    width: 350px;
+  }
+}
+
+
+
+
+
+
+
+

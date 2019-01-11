@@ -1,0 +1,253 @@
+@font-face{
+    font-family: 'HelveticaCE-Bold';
+    src: url('../fonts/HelveticaCE-Bold.otf');
+    font-family: 'Helvetica-CE-Regular';
+    src: url('../fonts/Helvetica-CE-Regular.ttf');
+}
+
+* {
+    font-family: "Helvetica-CE-Regular";
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    /*height: 117px;*/
+    background: linear-gradient(#fff 20%, #e1e1e1);
+    border-bottom: 1px #beb8b8 solid ;
+}
+
+.main-name {
+    margin-top: 30px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    /*margin-top: 40px;*/
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-block {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 110px;
+    height: 120px;
+    text-align: center;
+}
+
+.menu-block:nth-child(2) {
+    border-left: 1px #beb8b8 solid;
+}
+
+.menu-block:nth-child(3) {
+    border-left: 1px #beb8b8 solid;
+}
+
+.menu-block:nth-child(4) {
+    border-left: 1px #beb8b8 solid;
+}
+
+
+.menu-block:hover {
+    background: linear-gradient(#fff 20%, #cbc3c3);
+    border-bottom: 5px #ff7d00 solid;
+}
+
+.menu__link {
+    color: #626262;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+.menu__icon {
+    margin-top: 45px;
+}
+
+.main-name__span_orange {
+    color: #ff7700;
+    font-family: Lobster;
+    font-size: 49px;
+}
+
+.main-name__span_grey {
+    color: #676666;
+    font-family: Lobster;
+    font-size: 49px;
+}
+
+.select-form {
+    margin-top: 40px;
+}
+
+.select-form span {
+    font-family: "Helvetica-CE-Regular", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #565555;
+
+}
+
+.select-form__input {
+    width: 450px;
+    height: 50px;
+    border-radius: 7px;
+}
+
+.select-form__input-button-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.select-form__link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Helvetica-CE-Regular;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.select-form__span-block {
+    text-align: center;
+    box-sizing: border-box;
+    padding-right: 140px;
+}
+
+.select-form__button {
+    margin-left: 15px;
+    width: 210px;
+    height: 50px;
+    background: linear-gradient(#ffa400, #ff6700);
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.img-block {
+    margin-top: 75px;
+}
+
+.img-block__4-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.img-block__item {
+    height: 283px;
+    width: 220px;
+    margin-left: 35px;
+    border: 1px #d6d6d6 solid;
+    font-family: Helvetica-CE-Regular;
+    color: #9f9898;
+    box-shadow: 0 0 5px #d6d6d6;
+
+}
+
+.img-block__img {
+    margin: 8px 0 0 8px;
+}
+
+.img-block__desc-block {
+    margin-top: 4px;
+    margin-left: 15px;
+    padding-bottom: 10px;
+}
+
+.img-block__desc-star {
+    border-bottom: 1px solid #e0dfdf;
+    display: flex;
+}
+
+.img-block__icon-star {
+    width: 22px;
+    height: 22px;
+    margin-top: 3px;
+    margin-left: 11px;
+    background-image: url("../img/icon5.png");
+}
+
+.fa {
+    color: #fff;
+}
+
+.fa-twitter {
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.fa-facebook {
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.fa-instagram {
+    margin-top: 3px;
+    margin-left: 4px;
+}
+
+.fa-tumblr {
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.img-block__social-icon {
+    margin-top: 5px;
+    margin-left: 4px;
+    width: 22px;
+    height: 22px;
+    background-color: #b1aeae;
+    border-radius: 10px;
+}
+
+.img-block__social-icon:hover {
+    background-color: #4b4bff;
+}
+
+.img-block__icon-block {
+    margin-left:  5px;
+    display: flex;
+}
+
+.img-block__share {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 55px;
+}
+
+.img-block__share-block {
+    display: flex;
+}
+
+footer {
+    height: 90px;
+    float: right;
+    margin-right: 200px;
+}
+
+.footer-block {
+    margin-top: 60px;
+    margin-bottom: 55px; ;
+    font-family: Arial sans-serif;
+    font-size: 17px;
+    color: #bfbebe;
+}
+
+
+
+

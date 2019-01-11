@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<meta charset="UTF-8">
+	<title>AstroWeather</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="css/style.css" rel="stylesheet">	
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<header>
+				<div class="container">
+					<div class='logo'>
+						<a href="index.html"><img alt="" class="graficlogo" src="img/logo.png"></a>
+						<form action="" method="get">
+							<button id="magnifier" type="submit"></button>
+							<input id="search" name="s" placeholder="Искать здесь..." type="search">
+						</form>
+					</div>
+				</div>
+			</header>
+			<div class="row">
+				<div class="col-md-5">
+					<div id="leftcol">
+						<h2 class="city-name"></h2>
+						<div class="timedate">			
+							<p id="date"></p>
+							<p id="time"></p>
+						</div>
+						<div class="weather-block">
+							<div class="row">
+								<div class="col-md-6 col-xs-6">
+									<div class="div-temp">
+										<p class="temp-value"></p>
+										<p class="weather-status"></p>
+									</div>
+								</div>
+								<div class="col-md-6 col-xs-6">
+									<div class="sunrise-sunset">
+										<dl class="sunrise">
+											<dt>Рассвет</dt>
+											<dd></dd>
+										</dl>
+										<dl class="sunset">
+											<dt>Закат</dt>
+											<dd></dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+							<div class="div-param">
+								<dl class='wind'>
+									<dt>Ветер</dt>
+									<dd class="wind-value"></dd>
+								</dl>
+								<dl class='humidity'>
+									<dt>Влажность</dt>
+									<dd class='humidity-value'></dd>
+								</dl>
+								<dl class='pressure'>
+									<dt>Давление</dt>
+									<dd class='pressure-value'></dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="col-md-6" id="rightcol">
+				<div class="weather-for-today">	
+					<div class="weather-in-three-hours">
+						<div><span class='first-date'></span></div>
+						<div><span class="first-time"></span></div>
+						<div><span class="first-temp"></span></div>
+						<div id='first-weather-icon' class="weather-icon"></div>
+					</div>
+					<div class="weather-in-three-hours">
+						<div><span class='second-date'></span></div>
+						<div><span class="second-time"></span></div>
+						<div><span class="second-temp"></span></div>
+						<div id='second-weather-icon' class="weather-icon"></div>
+					</div>
+					<div class="weather-in-three-hours">
+						<div><span class='third-date'></span></div>
+						<div><span class="third-time"></span></div>
+						<div><span class="third-temp"></span></div>
+						<div id='third-weather-icon' class="weather-icon"></div>
+					</div>
+					<div class="weather-in-three-hours">
+						<div><span class='fourth-date'></span></div>
+						<div><span class="fourth-time"></span></div>
+						<div><span class="fourth-temp"></span></div>
+						<div id='fourth-weather-icon' class="weather-icon"></div>
+					</div>
+					<div class="weather-in-three-hours">
+						<div><span class='fifth-date'></span></div>
+						<div><span class="fifth-time"></span></div>
+						<div><span class="fifth-temp"></span></div>
+						<div id='fifth-weather-icon' class="weather-icon"></div>
+					</div>
+					<div class="weather-in-three-hours">
+						<div><span class='sixth-date'></span></div>
+						<div><span class="sixth-time"></span></div>
+						<div><span class="sixth-temp"></span></div>
+						<div id='sixth-weather-icon' class="weather-icon"></div>
+					</div>
+					<div class="weather-in-three-hours">
+						<div><span class='seventh-date'></span></div>
+						<div><span class='seventh-time'></span></div>
+						<div><span class='seventh-temp'></span></div>
+						<div id='seventh-weather-icon' class="weather-icon"></div>
+					</div>
+					<div class="weather-in-three-hours">
+						<div><span class='eighth-date'></span></div>
+						<div><span class="eighth-time"></span></div>
+						<div><span class="eighth-temp"></span></div>
+						<div id='eighth-weather-icon' class="weather-icon"></div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<footer>
+			<div class="github-img">
+				<a href="https://github.com/AstR0x"><img src="img/github.png" alt=""></a>
+			</div>
+		</footer>
+	</div>
+	<script src="lib/jquery-3.3.1.min.js"></script>
+	<script src="js/script.js"></script>	
+</body>
+</html>
