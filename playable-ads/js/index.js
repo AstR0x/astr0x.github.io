@@ -121,7 +121,11 @@ class AnimateImg extends ImgOfObject {
   }
 }
 
-
+let bg = new Img('img/bg_ho.png', 0, 0, cvs.width, cvs.height);
+let bgCover = new Img('img/bg_cover.png', 0, 0, cvs.width, cvs.height);
+let bgBlur = new Img('img/bg_blur.png', 0, 0, cvs.width, cvs.height);
+let gui = new Img('img/ho_gui.png', cvs.width / 6, cvs.height / 1.2, cvs.width / 1.5, cvs.height / 5.5);
+let logo = new Img('img/logo.png', cvs.width / 4, cvs.height / 10, cvs.width / 2, cvs.height / 2.2);
 
 const tutorial = new AnimateImg('img/tutorial.png', cvs.width / 3, cvs.height / 25, cvs.width / 3, cvs.height / 4,
     'Find all the\nhidden objects', cvs.width / 2.35, cvs.height / 5.7);
@@ -165,12 +169,6 @@ let fan = new ImgOfObject('img/fan.png', cvs.width / 3.2, cvs.height / 2.2, cvs.
 let shoe = new ImgOfObject('img/shoe.png', cvs.width / 1.8, cvs.height / 1.28, cvs.width / 16, cvs.height / 12,
     'Shoe', cvs.width / 1.45, cvs.height / 1.055);
 
-let bgCover = new Img('img/bg_cover.png', 0, 0, cvs.width, cvs.height);
-let bgBlur = new Img('img/bg_blur.png', 0, 0, cvs.width, cvs.height);
-let gui = new Img('img/ho_gui.png', cvs.width / 6, cvs.height / 1.2, cvs.width / 1.5, cvs.height / 5.5);
-let logo = new Img('img/logo.png', cvs.width / 4, cvs.height / 10, cvs.width / 2, cvs.height / 2.2);
-let bg = new Img('img/bg_ho.png', 0, 0, cvs.width, cvs.height);
-
 const randomNum = Math.round(Math.random() * 2);
 
 let arrOfArrays = [[playingCard, purse, glassBird, apple], [book, basket, fan, shoe],
@@ -187,7 +185,7 @@ function inRad(num) {
 let time = performance.now();
 
 
-bg.img.onload = function () {
+shoe.img.onload = function () {
   document.getElementById('floatingCirclesG').style.display = 'none'; //Остановка анимации загрузки
   game();
 }
