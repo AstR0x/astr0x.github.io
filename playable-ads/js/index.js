@@ -177,9 +177,11 @@ if (randomNum === 0) {
   let arraysOfArrays = [book, basket, fan, shoe];
 }
 
-window.onload = function () {
-  document.getElementById('floatingCirclesG').style.display = 'none'; //Остановка анимации загрузки
-  game();
+bg.img.onload = function () {
+  tutorial.img.onload = function () {
+    document.getElementById('floatingCirclesG').style.display = 'none'; //Остановка анимации загрузки
+    game();
+  }
 }
 
 let arrOfObjects = arrOfArrays[randomNum];
