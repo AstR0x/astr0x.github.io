@@ -138,46 +138,49 @@ tutorial.drawText = function () {
 let button = new AnimateImg('img/button.png', cvs.width / 2.66, cvs.height / 1.8, cvs.width / 4, cvs.height / 10,
     'Play FREE', cvs.width / 2.15, cvs.height / 1.62);
 
-//first set
-let playingCard = new ImgOfObject('img/playing_card.png', cvs.width / 1.25, cvs.height / 1.8,
-    cvs.width / 25, cvs.height / 10, 'Playing card', cvs.width / 4, cvs.height / 1.055, -45);
-let purse = new ImgOfObject('img/purse.png', cvs.width / 3.8, cvs.height / 1.67,
-    cvs.width / 15, cvs.height / 10, 'Purse', cvs.width / 2.4, cvs.height / 1.055, 10);
-let glassBird = new ImgOfObject('img/glass_bird.png', cvs.width / 4, cvs.height / 4, cvs.width / 16, cvs.height / 12,
-    'Glass Bird', cvs.width / 1.9, cvs.height / 1.055);
-let apple = new ImgOfObject('img/apple.png', cvs.width / 1.68, cvs.height / 1.96, cvs.width / 30, cvs.height / 17,
-    'Apple', cvs.width / 1.45, cvs.height / 1.055);
+const randomNum = Math.round(Math.random() * 2);
 
-//second set
-let mirror = new ImgOfObject('img/mirror.png', cvs.width / 5.5, cvs.height / 3, cvs.width / 16, cvs.height / 7,
-    'Mirror', cvs.width / 4, cvs.height / 1.055);
-let balerina = new ImgOfObject('img/balerina.png', cvs.width / 2, cvs.height / 2.65, cvs.width / 13, cvs.height / 5,
-    'Ballet Dancer', cvs.width / 2.7, cvs.height / 1.055);
-let parfume = new ImgOfObject('img/parfume.png', cvs.width / 3.7, cvs.height / 1.6, cvs.width / 20, cvs.height / 13,
-    'Parfume', cvs.width / 1.8,
-    cvs.height / 1.055, 25);
-let comb = new ImgOfObject('img/comb.png', cvs.width / 1.15, cvs.height / 2.15, cvs.width / 30, cvs.height / 20,
-    'Comb', cvs.width / 1.45, cvs.height / 1.055, 25);
+if (randomNum === 0) {
+  //first set
+  let playingCard = new ImgOfObject('img/playing_card.png', cvs.width / 1.25, cvs.height / 1.8,
+      cvs.width / 25, cvs.height / 10, 'Playing card', cvs.width / 4, cvs.height / 1.055, -45);
+  let purse = new ImgOfObject('img/purse.png', cvs.width / 3.8, cvs.height / 1.67,
+      cvs.width / 15, cvs.height / 10, 'Purse', cvs.width / 2.4, cvs.height / 1.055, 10);
+  let glassBird = new ImgOfObject('img/glass_bird.png', cvs.width / 4, cvs.height / 4, cvs.width / 16, cvs.height / 12,
+      'Glass Bird', cvs.width / 1.9, cvs.height / 1.055);
+  let apple = new ImgOfObject('img/apple.png', cvs.width / 1.68, cvs.height / 1.96, cvs.width / 30, cvs.height / 17,
+      'Apple', cvs.width / 1.45, cvs.height / 1.055);
+  let arraysOfArrays = [playingCard, purse, glassBird, apple];
 
-//third set
-let book = new ImgOfObject('img/book.png', cvs.width / 1.5, cvs.height / 1.78, cvs.width / 15, cvs.height / 15,
-    'Book', cvs.width / 4, cvs.height / 1.055, -10);
-let basket = new ImgOfObject('img/basket.png', cvs.width / 2.05, cvs.height / 2.15, cvs.width / 14, cvs.height / 9,
-    'Basket', cvs.width / 2.45, cvs.height / 1.055);
-let fan = new ImgOfObject('img/fan.png', cvs.width / 3.2, cvs.height / 2.2, cvs.width / 10, cvs.height / 8, 'Fan',
-    cvs.width / 1.76, cvs.height / 1.055, -140);
-let shoe =  new ImgOfObject('img/shoe.png', cvs.width / 1.8, cvs.height / 1.28, cvs.width / 16,
-    cvs.height / 12, 'Shoe', cvs.width / 1.45, cvs.height / 1.055);
+} else if (randomNum === 1) {
+  //second set
+  let mirror = new ImgOfObject('img/mirror.png', cvs.width / 5.5, cvs.height / 3, cvs.width / 16, cvs.height / 7,
+      'Mirror', cvs.width / 4, cvs.height / 1.055);
+  let balerina = new ImgOfObject('img/balerina.png', cvs.width / 2, cvs.height / 2.65, cvs.width / 13, cvs.height / 5,
+      'Ballet Dancer', cvs.width / 2.7, cvs.height / 1.055);
+  let parfume = new ImgOfObject('img/parfume.png', cvs.width / 3.7, cvs.height / 1.6, cvs.width / 20, cvs.height / 13,
+      'Parfume', cvs.width / 1.8,
+      cvs.height / 1.055, 25);
+  let comb = new ImgOfObject('img/comb.png', cvs.width / 1.15, cvs.height / 2.15, cvs.width / 30, cvs.height / 20,
+      'Comb', cvs.width / 1.45, cvs.height / 1.055, 25);
+  let arraysOfArrays = [mirror, balerina, parfume, comb];
+} else {
+  //third set
+  let book = new ImgOfObject('img/book.png', cvs.width / 1.5, cvs.height / 1.78, cvs.width / 15, cvs.height / 15,
+      'Book', cvs.width / 4, cvs.height / 1.055, -10);
+  let basket = new ImgOfObject('img/basket.png', cvs.width / 2.05, cvs.height / 2.15, cvs.width / 14, cvs.height / 9,
+      'Basket', cvs.width / 2.45, cvs.height / 1.055);
+  let fan = new ImgOfObject('img/fan.png', cvs.width / 3.2, cvs.height / 2.2, cvs.width / 10, cvs.height / 8, 'Fan',
+      cvs.width / 1.76, cvs.height / 1.055, -140);
+  let shoe =  new ImgOfObject('img/shoe.png', cvs.width / 1.8, cvs.height / 1.28, cvs.width / 16,
+      cvs.height / 12, 'Shoe', cvs.width / 1.45, cvs.height / 1.055);
+  let arraysOfArrays = [book, basket, fan, shoe];
+}
 
 window.onload = function () {
   document.getElementById('floatingCirclesG').style.display = 'none'; //Остановка анимации загрузки
   game();
 }
-
-const randomNum = Math.round(Math.random() * 2);
-
-let arrOfArrays = [[playingCard, purse, glassBird, apple], [book, basket, fan, shoe],
-  [mirror, balerina, parfume, comb]];
 
 let arrOfObjects = arrOfArrays[randomNum];
 
@@ -188,9 +191,6 @@ function inRad(num) {
 
 //Начальное время
 let time = performance.now();
-
-
-
 
 function game() {
   render();
