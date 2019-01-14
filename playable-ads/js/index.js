@@ -179,11 +179,15 @@ if (randomNum === 0) {
   set = [book, basket, fan, shoe];
 }
 
-set[3].img.onload = function () {
-  console.log(set[3].img.complete);
-  document.getElementById('floatingCirclesG').style.display = 'none'; //Остановка анимации загрузки
-  game();
-}
+let int = setInterval(function () {
+  if(set.every(function (elem) {
+    return elem.img.complete;
+  }) && bg.img.complete) {
+    document.getElementById('floatingCirclesG').style.display = 'none'; //Остановка анимации загрузки
+    game();
+    clearInterval(int);
+  }
+}, 100);
 
 //Функция для перевода градусов в радианы
 function inRad(num) {
