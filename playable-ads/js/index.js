@@ -150,7 +150,7 @@ if (randomNum === 0) {
       'Glass Bird', cvs.width / 1.9, cvs.height / 1.055);
   let apple = new ImgOfObject('img/apple.png', cvs.width / 1.68, cvs.height / 1.96, cvs.width / 30, cvs.height / 17,
       'Apple', cvs.width / 1.45, cvs.height / 1.055);
-  let arraysOfArrays = [playingCard, purse, glassBird, apple];
+  var arraysOfArrays = [playingCard, purse, glassBird, apple];
 
 } else if (randomNum === 1) {
   //second set
@@ -163,7 +163,7 @@ if (randomNum === 0) {
       cvs.height / 1.055, 25);
   let comb = new ImgOfObject('img/comb.png', cvs.width / 1.15, cvs.height / 2.15, cvs.width / 30, cvs.height / 20,
       'Comb', cvs.width / 1.45, cvs.height / 1.055, 25);
-  let arraysOfArrays = [mirror, balerina, parfume, comb];
+  var arraysOfArrays = [mirror, balerina, parfume, comb];
 } else {
   //third set
   let book = new ImgOfObject('img/book.png', cvs.width / 1.5, cvs.height / 1.78, cvs.width / 15, cvs.height / 15,
@@ -174,16 +174,15 @@ if (randomNum === 0) {
       cvs.width / 1.76, cvs.height / 1.055, -140);
   let shoe =  new ImgOfObject('img/shoe.png', cvs.width / 1.8, cvs.height / 1.28, cvs.width / 16,
       cvs.height / 12, 'Shoe', cvs.width / 1.45, cvs.height / 1.055);
-
-  let arrOfArrays = [book, basket, fan, shoe];
+  var arraysOfArrays = [book, basket, fan, shoe];
 }
 
-arrOfArrays[3].img.onload = function () {
-  document.getElementById('floatingCirclesG').style.display = 'none'; //Остановка анимации загрузки
+bg.img.onload = function () {
+  // document.getElementById('floatingCirclesG').style.display = 'none'; //Остановка анимации загрузки
   game();
 }
 
-let arrOfObjects = arrOfArrays;
+let arrOfObjects = arraysOfArrays;
 
 //Функция для перевода градусов в радианы
 function inRad(num) {
