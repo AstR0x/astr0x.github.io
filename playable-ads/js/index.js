@@ -140,6 +140,8 @@ let button = new AnimateImg('img/button.png', cvs.width / 2.66, cvs.height / 1.8
 
 const randomNum = Math.round(Math.random() * 2);
 
+let set = [];
+
 if (randomNum === 0) {
   //first set
   let playingCard = new ImgOfObject('img/playing_card.png', cvs.width / 1.25, cvs.height / 1.8,
@@ -150,7 +152,7 @@ if (randomNum === 0) {
       'Glass Bird', cvs.width / 1.9, cvs.height / 1.055);
   let apple = new ImgOfObject('img/apple.png', cvs.width / 1.68, cvs.height / 1.96, cvs.width / 30, cvs.height / 17,
       'Apple', cvs.width / 1.45, cvs.height / 1.055);
-  var arraysOfArrays = [playingCard, purse, glassBird, apple];
+  set = [playingCard, purse, glassBird, apple];
 
 } else if (randomNum === 1) {
   //second set
@@ -163,7 +165,7 @@ if (randomNum === 0) {
       cvs.height / 1.055, 25);
   let comb = new ImgOfObject('img/comb.png', cvs.width / 1.15, cvs.height / 2.15, cvs.width / 30, cvs.height / 20,
       'Comb', cvs.width / 1.45, cvs.height / 1.055, 25);
-  var arraysOfArrays = [mirror, balerina, parfume, comb];
+  set = [mirror, balerina, parfume, comb];
 } else {
   //third set
   let book = new ImgOfObject('img/book.png', cvs.width / 1.5, cvs.height / 1.78, cvs.width / 15, cvs.height / 15,
@@ -174,15 +176,14 @@ if (randomNum === 0) {
       cvs.width / 1.76, cvs.height / 1.055, -140);
   let shoe =  new ImgOfObject('img/shoe.png', cvs.width / 1.8, cvs.height / 1.28, cvs.width / 16,
       cvs.height / 12, 'Shoe', cvs.width / 1.45, cvs.height / 1.055);
-  var arraysOfArrays = [book, basket, fan, shoe];
+  set = [book, basket, fan, shoe];
 }
 
-arraysOfArrays[3].img.onload = function () {
+set[3].img.onload = function () {
+  console.log(set[3].img.complete);
   document.getElementById('floatingCirclesG').style.display = 'none'; //Остановка анимации загрузки
   game();
 }
-
-let arrOfObjects = arraysOfArrays;
 
 //Функция для перевода градусов в радианы
 function inRad(num) {
@@ -199,7 +200,7 @@ function game() {
 
 //Обработка объектов
 cvs.addEventListener('click', function (event) {
-  arrOfObjects.forEach((elem, i) => {
+  set.forEach((elem, i) => {
     //Проверка области клика
     if (elem.checkCoord(event)) {
       time = performance.now();
@@ -212,9 +213,9 @@ cvs.addEventListener('click', function (event) {
         }
         //Удаление объекта из массива
         else {
-          delete arrOfObjects[i];
+          delete set[i];
           setTimeout(function () {
-            arrOfObjects = arrOfObjects.filter((elem) => {
+            set = set.filter((elem) => {
               return elem;
             });
           }, 50);
@@ -232,7 +233,7 @@ function render() {
   ctx.clearRect(0, 0, cvs.width, cvs.height);
 
   //Отрисовка заднего фона, gui и tutorial
-  if (arrOfObjects.length !== 0) {
+  if (set.length !== 0) {
     bg.drawImg();
     gui.drawImg();
     tutorial.drawImg();
@@ -246,20 +247,20 @@ function render() {
   }
 
   //Отрисовка объектов
-  arrOfObjects.forEach((elem) => {
+  set.forEach((elem) => {
     ctx.globalAlpha = elem.globalA;
 
     //Проверка на время
-    if (performance.now() - time >= 5 * 1000 && arrOfObjects[0].backlight === false) {
-      arrOfObjects[0].backlight = true;
+    if (performance.now() - time >= 5 * 1000 && set[0].backlight === false) {
+      set[0].backlight = true;
 
       //Запуск анимации для первого объекта в списке
       let inter = setInterval(() => {
-        arrOfObjects[0].animate();
+        set[0].animate();
 
         //Отключение анимации при клике на объект
         cvs.addEventListener('click', function (event) {
-          arrOfObjects.forEach((elem) => {
+          set.forEach((elem) => {
             if (elem.checkCoord(event)) {
               clearInterval(inter);
             }
