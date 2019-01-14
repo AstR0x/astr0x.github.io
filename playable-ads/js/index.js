@@ -177,8 +177,8 @@ if (randomNum === 0) {
   var arraysOfArrays = [book, basket, fan, shoe];
 }
 
-bg.img.onload = function () {
-  // document.getElementById('floatingCirclesG').style.display = 'none'; //Остановка анимации загрузки
+arraysOfArrays[3].img.onload = function () {
+  document.getElementById('floatingCirclesG').style.display = 'none'; //Остановка анимации загрузки
   game();
 }
 
