@@ -174,17 +174,16 @@ if (randomNum === 0) {
       cvs.width / 1.76, cvs.height / 1.055, -140);
   let shoe =  new ImgOfObject('img/shoe.png', cvs.width / 1.8, cvs.height / 1.28, cvs.width / 16,
       cvs.height / 12, 'Shoe', cvs.width / 1.45, cvs.height / 1.055);
-  let arraysOfArrays = [book, basket, fan, shoe];
+
+  let arrOfArrays = [book, basket, fan, shoe];
 }
 
-bg.img.onload = function () {
-  tutorial.img.onload = function () {
-    document.getElementById('floatingCirclesG').style.display = 'none'; //Остановка анимации загрузки
-    game();
-  }
+arrOfArrays[3].img.onload = function () {
+  document.getElementById('floatingCirclesG').style.display = 'none'; //Остановка анимации загрузки
+  game();
 }
 
-let arrOfObjects = arrOfArrays[randomNum];
+let arrOfObjects = arrOfArrays;
 
 //Функция для перевода градусов в радианы
 function inRad(num) {
