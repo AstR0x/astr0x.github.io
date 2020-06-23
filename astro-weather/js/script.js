@@ -16,12 +16,10 @@ $(document).ready(function() {
 		let xhr = new XMLHttpRequest();
 		xhr.open('GET', url, false);
 		xhr.send();
-		console.log(xhr.responseText);
 		if (xhr.status != 200) {
 			console.log(xhr.status);
 		} else {
 			var Data = JSON.parse(xhr.responseText);
-			console.log(Data);
 		}
 		return Data;
 	}
@@ -75,7 +73,6 @@ $(document).ready(function() {
 		} else {
 			document.getElementsByClassName('weather-status')[0].innerHTML = Data.weather[0].description;
 		}
-		console.log(Data);
 	}
 	//Вывод давления, влажности, скорости ветра, времени рассвета и заката
 	function innerParameters(Data, sunrise, sunset) {
@@ -150,6 +147,7 @@ $(document).ready(function() {
 		$('.city-name').text(firstLettertoUpper(city));
 		let url_day = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=c1a5ef1e777670da9b49432a84d4b250';
 		let url_5days = 'http://api.openweathermap.org/data/2.5/forecast?q=' + city + '&appid=c1a5ef1e777670da9b49432a84d4b250';
+		console.log(url_5days);
 		getWeatherViaURL(url_day);
 		getWeatherForToday(url_5days);
 	})
