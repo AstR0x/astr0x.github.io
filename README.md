@@ -2,6 +2,10 @@
 
 Repository for hosting projects
 
+* [vue-coincap](https://astr0x.github.io/vue-coincap/)
+
+* [react-astro-weather](https://astr0x.github.io/react-astro-weather/)
+
 * [playable-ads](https://astr0x.github.io/playable-ads/)
 
 * [osu-clone](https://astr0x.github.io/osu-clone/)
