@@ -2,6 +2,8 @@
 
 Repository for hosting projects
 
+* [astronauts](https://astr0x.github.io/astronauts/)
+
 * [vue-coincap](https://astr0x.github.io/vue-coincap/)
 
 * [react-astro-weather](https://astr0x.github.io/react-astro-weather/)
