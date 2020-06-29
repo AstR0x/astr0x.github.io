@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dcd0134ff98b84f563a138b5149aec4d",
+    "revision": "a83f455e1986aae133648f78011e49bb",
     "url": "/astronauts/index.html"
   },
   {
-    "revision": "2b717e4adbc71113a7a2",
-    "url": "/astronauts/static/css/main.af9c0f18.chunk.css"
+    "revision": "9aec108ab7efea09859f",
+    "url": "/astronauts/static/css/main.e056165e.chunk.css"
   },
   {
     "revision": "334bbba5b1a0cb0867e5",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/astronauts/static/js/2.69ddf902.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2b717e4adbc71113a7a2",
-    "url": "/astronauts/static/js/main.104392a4.chunk.js"
+    "revision": "9aec108ab7efea09859f",
+    "url": "/astronauts/static/js/main.6badf537.chunk.js"
   },
   {
     "revision": "09f65df6bfca64e5eb36",

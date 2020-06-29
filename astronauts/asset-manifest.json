@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/astronauts/static/css/main.af9c0f18.chunk.css",
-    "main.js": "/astronauts/static/js/main.104392a4.chunk.js",
-    "main.js.map": "/astronauts/static/js/main.104392a4.chunk.js.map",
+    "main.css": "/astronauts/static/css/main.e056165e.chunk.css",
+    "main.js": "/astronauts/static/js/main.6badf537.chunk.js",
+    "main.js.map": "/astronauts/static/js/main.6badf537.chunk.js.map",
     "runtime-main.js": "/astronauts/static/js/runtime-main.9603f1b7.js",
     "runtime-main.js.map": "/astronauts/static/js/runtime-main.9603f1b7.js.map",
     "static/js/2.69ddf902.chunk.js": "/astronauts/static/js/2.69ddf902.chunk.js",
     "static/js/2.69ddf902.chunk.js.map": "/astronauts/static/js/2.69ddf902.chunk.js.map",
     "index.html": "/astronauts/index.html",
-    "precache-manifest.2fadeea70390599f5c35186fcfc406f6.js": "/astronauts/precache-manifest.2fadeea70390599f5c35186fcfc406f6.js",
+    "precache-manifest.e779589b2015973b3e84ad6bc6f6012d.js": "/astronauts/precache-manifest.e779589b2015973b3e84ad6bc6f6012d.js",
     "service-worker.js": "/astronauts/service-worker.js",
-    "static/css/main.af9c0f18.chunk.css.map": "/astronauts/static/css/main.af9c0f18.chunk.css.map",
+    "static/css/main.e056165e.chunk.css.map": "/astronauts/static/css/main.e056165e.chunk.css.map",
     "static/js/2.69ddf902.chunk.js.LICENSE.txt": "/astronauts/static/js/2.69ddf902.chunk.js.LICENSE.txt",
     "static/media/delete.02b9e374.svg": "/astronauts/static/media/delete.02b9e374.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.9603f1b7.js",
     "static/js/2.69ddf902.chunk.js",
-    "static/css/main.af9c0f18.chunk.css",
-    "static/js/main.104392a4.chunk.js"
+    "static/css/main.e056165e.chunk.css",
+    "static/js/main.6badf537.chunk.js"
   ]
 }
