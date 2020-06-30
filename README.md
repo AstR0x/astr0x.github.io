@@ -18,8 +18,6 @@ Repository for hosting projects
 
 * [cherry](https://astr0x.github.io/cherry/)
 
-* [photo-cage](https://astr0x.github.io/photo-cage/)
-
 
 
 
