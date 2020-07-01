@@ -8,7 +8,7 @@ Repository for hosting projects
 
 * [react-astro-weather](https://astr0x.github.io/react-astro-weather/)
 
-* [playable-ads](https://astr0x.github.io/playable-ads/)
+* [hidden-object-game](https://astr0x.github.io/hidden-object-game/) (AdBlock must be disabled)
 
 * [osu-clone](https://astr0x.github.io/osu-clone/)
 
