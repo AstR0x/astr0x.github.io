@@ -16,8 +16,6 @@ Repository for hosting projects
 
 * [calculator-v2.0](https://astr0x.github.io/calculator-v2.0/)
 
-* [astro-weather](https://astr0x.github.io/astro-weather/)
-
 * [cherry](https://astr0x.github.io/cherry/)
 
 
