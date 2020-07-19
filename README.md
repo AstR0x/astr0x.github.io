@@ -2,6 +2,8 @@
 
 Repository for hosting projects
 
+* [kanban-board](https://astr0x.github.io/kanban-board)
+
 * [astronauts](https://astr0x.github.io/astronauts/)
 
 * [vue-coincap](https://astr0x.github.io/vue-coincap/)
